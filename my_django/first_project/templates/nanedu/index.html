@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nanedu</title>
+    <link rel="stylesheet" href="{% static 'css/my_style.css' %}" />
+  </head>
+  <body>
+    <h1>Hello! Ini index.html</h1>
+
+    <p>Ini adalah foto yang tampil</p>
+    <img src="{% static 'images/tes.jpg' %}" alt="foto" width="100" />
+
+    <h2>Ini adalah access record:</h2>
+    <div class="record">
+      {%if access_records %}
+      <table>
+        <thead>
+          <th>Nama orang</th>
+          <th>Riwayat akses</th>
+        </thead>
+        {% for acc in access_records %}
+        <tr>
+          <td>{{ acc.name }}</td>
+          <td>{{ acc.date }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {%else%}
+      <p>Belum ada orang terdeteksi</p>
+      {%endif%}
+    </div>
+  </body>
+</html>

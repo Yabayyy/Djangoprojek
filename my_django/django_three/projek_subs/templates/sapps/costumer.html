@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome</title>
+</head>
+<body>
+  <h1>Ini adalah list Costumer</h1>
+  {% if costumer %}
+  <ol>
+    {% for person in costumer %}
+    <li>
+      costumer info
+      <ul>
+        <li>First name : {{ person.first_name }}</li>
+        <li>Last name : {{ person.last_name }}</li>
+        <li>Email : {{ person.email }}</li>
+      </ul>
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+</body>
