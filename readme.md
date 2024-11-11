@@ -16,8 +16,6 @@ pip install Django
 Install Faker with pip:
 pip install Faker
 
-Run at first_project folder:
-python manage.py runserver
 Open http://127.0.0.1:8000/ with your browser to see the result.
 
 Learn more
