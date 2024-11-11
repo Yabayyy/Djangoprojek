@@ -1,22 +1,22 @@
-Project Django Mandiri Educourse
+## Project Django Mandiri Educourse
 Bayu Dwi Prasetyo
 
-Start virtual environment:
+## Start virtual environment:
 my_venv\scripts\activate.ps1
 
-Stop virtual environment:
+## Stop virtual environment:
 deactivate
 
-If got authorized warning:
+## If got unauthorized warning:
 Set-ExecutionPolicy Unrestricted -Scope Process
 
-Instal Django with pip:
+## Instal Django with pip:
 pip install Django
 
-Install Faker with pip:
+## Install Faker with pip:
 pip install Faker
 
 Open http://127.0.0.1:8000/ with your browser to see the result.
 
-Learn more
+## Learn more
 To learn Faker, Check https://faker.readthedocs.io/en/master/
