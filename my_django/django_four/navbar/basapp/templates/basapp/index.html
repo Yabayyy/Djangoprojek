@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends 'basapp/base.html' %} {% block body_block %}
+<h1>Ini adalah Index</h1>
+<p>{{ text | cut:"yang" }}</p>
+<p>{{ number | add:1500 }}</p>
+<p>Tanggal saat ini: {{ now|date:"d-m-Y" }}</p>
+{% endblock %}
